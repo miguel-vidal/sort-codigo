@@ -1,0 +1,154 @@
+body{
+    background-color: #FEEBC1;
+}
+
+hr{
+    margin:0 auto;
+    color: black;
+    background-color: black;
+    height: .2em;
+    width:80%;
+}
+
+.app{
+    width:100%;
+    height:auto;
+    padding-top:3%;
+    margin-bottom:5%;
+}
+
+.graph{
+    display:flex;
+    margin:0 auto;
+    width:fit-content;
+    height:fit-content;
+}
+
+.options{
+    padding-top:1%;
+    width:100%;
+    background:#97CAEF;
+    height:10%;
+    margin-bottom:5%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btn{
+    background-color:#3500D3;
+    width:9em;
+    height:3em;
+    border-radius: 3px 3px;
+    color:white;
+    font-size:.8em;
+    cursor:pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.reset{
+    background-color:white;
+    color:black;
+    width:13em;
+}
+
+#rangeResponsive{
+    display:none;
+}
+
+/*loader*/
+.spinner{
+	border:4px solid rgba(0,0,0,.1);
+	width:36px;
+	height:36px;
+	border-radius:50%;
+	border-left-color:transparent;
+	margin:0 auto;
+	animation:spin 1s ease infinite;
+}
+
+@keyframes spin{
+	0% {
+		transform:rotate(0deg);
+	}
+
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
+
+@media screen and (max-width:800px){
+
+    .app{
+        margin-bottom:10%;
+    }
+
+    .btn{
+        width:1.2em;
+        font-size:.9em;
+        width:10em;
+        margin:0 auto;
+    }
+    .graph{
+        width:fit-content;
+    }
+
+    h2{
+        margin:0 auto;
+    }
+    #rangeNormal{
+        display: none;
+    }
+
+    #rangeResponsive{
+        display:block;
+        width:70%;
+        margin:0 auto;
+    }
+
+    .options{
+        height:30%;
+        flex-direction:column;
+    }
+
+}
+
+@media screen and (max-width:400px){
+
+    .app{
+        margin-bottom:10%;
+    }
+
+    .btn{
+        width:1.2em;
+        font-size:.9em;
+        width:10em;
+        margin:0 auto;
+    }
+    .graph{
+        width:100%;
+    }
+
+    h2{
+        margin:0 auto;
+    }
+    #rangeNormal{
+        display: none;
+    }
+
+    #rangeResponsive{
+        display:block;
+        width:70%;
+        margin:0 auto;
+    }
+
+    .options{
+        height:30%;
+        flex-direction:column;
+    }
+
+}
